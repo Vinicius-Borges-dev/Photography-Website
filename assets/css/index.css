@@ -1,0 +1,194 @@
+.all-content{
+    background-color: white;
+}
+
+.logo-area {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.item-list {
+  list-style: none;
+}
+
+.item-list {
+  list-style: none;
+  padding: 2rem;
+}
+
+.btn-menu {
+  margin-left: auto;
+  margin-right: 1rem;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-menu img {
+  width: 2rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.apresentation {
+  text-align: center;
+  margin: 6rem 0;
+  text-transform: uppercase;
+}
+
+.apresentation h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.apresentation hr {
+  width: 25%;
+  margin: auto;
+}
+
+.apresentation p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: gray;
+  margin-top: 2rem;
+  letter-spacing: 4px;
+}
+
+.img-group {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.images {
+  width: 100%;
+}
+
+.image-container figcaption {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 3rem;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0));
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  opacity: 0;
+}
+
+.image-container:hover figcaption {
+  opacity: 1;
+  padding-top: 70%;
+  transition: all 0.7s;
+}
+
+/* passsando de 1024px ele executa isso */
+@media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 0.5;
+  }
+
+  .item-list:hover {
+    border-bottom: 5px solid #3a3a3a;
+    transition: all 0.3s;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+}
+
+/* Até 1024 pixels ele vai executar isso */
+@media (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: end;
+    width: auto;
+  }
+  .header hr:nth-child(2) {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .item-list {
+    padding: 1rem;
+  }
+
+  .btn-menu {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .apresentation h1 {
+    font-size: 2.5rem;
+  }
+
+  .apresentation p {
+    font-size: 1.2rem;
+  }
+
+  .img-group {
+    grid-template-columns: auto;
+  }
+}
+
+.icon-theme{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    padding: 5px;
+    z-index: 999;
+}
+
+.icon-theme img{
+    width: 100%;
+    height: 100%;
+}
+
+.dark-theme{
+    filter: invert(100%);
+    transition: all 0.5s;
+}
